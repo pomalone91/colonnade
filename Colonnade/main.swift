@@ -8,5 +8,11 @@
 
 import Foundation
 
-print("Hello, World!")
+let app = Colonnade()
+
+if CommandLine.argc > 1 {
+    app.staticMode()
+} else {
+    print("Please provide a path to a csv file.")
+}
 
