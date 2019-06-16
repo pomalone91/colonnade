@@ -17,15 +17,15 @@ struct Colonnade {
         print(table.mdTable())
 //        print(ConsoleIO.getArgFlag())
         
-        // Switch delimiters
-        if let flag = ConsoleIO.getArgFlag() {
-            switch flag {
-            case "d":
-                print("Getting delimiter now")
-                print("\"\(ConsoleIO.getDelimiter())\"")
-            default:
-                print("invalid argument flag")
-            }
-        }
+//        // Switch delimiters
+//        if let flag = ConsoleIO.getArgFlag() {
+//            switch flag {
+//            case "d":
+//                print("Getting delimiter now")
+//                print("\"\(ConsoleIO.getDelimiter())\"")
+//            default:
+//                print("invalid argument flag")
+//            }
+//        }
     }
 }

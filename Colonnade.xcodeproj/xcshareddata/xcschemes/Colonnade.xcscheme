@@ -63,7 +63,7 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "/Users/paulmalone/Desktop/test.csv -d &quot;     &quot;"
+            argument = "/Users/paulmalone/Desktop/test.csv &quot;     &quot;"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

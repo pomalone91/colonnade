@@ -37,8 +37,8 @@ struct ConsoleIO {
     }
     
     static func getDelimiter() -> String {
-        if CommandLine.arguments.count > 3 {
-            return CommandLine.arguments[3]
+        if CommandLine.arguments.count > 2 {
+            return CommandLine.arguments[2]
         }
         return ","
     }
