@@ -35,8 +35,11 @@ struct ConsoleIO {
         }
         return nil
     }
-}
-
-enum ArgFlag {
-    case d
+    
+    static func getDelimiter() -> String {
+        if CommandLine.arguments.count > 3 {
+            return CommandLine.arguments[3]
+        }
+        return ","
+    }
 }

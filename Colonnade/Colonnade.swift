@@ -15,6 +15,17 @@ struct Colonnade {
         guard let contents = ConsoleIO.readFile(at: url) else { return }
         let table = Table(string: contents)
         print(table.mdTable())
-        print(ConsoleIO.getArgFlag())
+//        print(ConsoleIO.getArgFlag())
+        
+        // Switch delimiters
+        if let flag = ConsoleIO.getArgFlag() {
+            switch flag {
+            case "d":
+                print("Getting delimiter now")
+                print("\"\(ConsoleIO.getDelimiter())\"")
+            default:
+                print("invalid argument flag")
+            }
+        }
     }
 }
