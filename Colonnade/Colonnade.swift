@@ -13,7 +13,7 @@ struct Colonnade {
     func staticMode() {
         let url = ConsoleIO.getUrl()
         guard let contents = ConsoleIO.readFile(at: url) else { return }
-        let table = Table(string: contents)
+        let table = Table(string: contents, delimiter: ConsoleIO.getDelimiter())
         print(table.mdTable())
 //        print(ConsoleIO.getArgFlag())
         

@@ -13,15 +13,15 @@ struct Table {
     var rows = [[String]]()
     var tableString = String()
     
-    init(string: String) {
+    init(string: String, delimiter: String) {
         // Split on \n
         var lines = string.splitOn(delimiter: "\n")
         // Split first row into headers
-        headers = lines.removeFirst().splitOn(delimiter: ",")
+        headers = lines.removeFirst().splitOn(delimiter: delimiter)
 //        print("Headers: \(headers)")
         // Split on comas
         for row in lines {
-            let rowData = row.split(separator: ",")
+            let rowData = row.splitOn(delimiter: delimiter)
             var rowToAppend = [String]()
             for item in rowData {
                 rowToAppend.append(String(item))
@@ -51,12 +51,14 @@ struct Table {
         
         // Loop through the rows and build each one like | data | data | data |\n
         for row in rows {
-            tableString.append("| ")
-            for cell in row {
-                tableString.append(cell)
-                tableString.append(" |")
+            if row.count >= headers.count {
+                tableString.append("| ")
+                for cell in row {
+                    tableString.append(cell)
+                    tableString.append(" |")
+                }
+                tableString.append("\n")
             }
-            tableString.append("\n")
         }
         
 //        print(tableString)
@@ -66,10 +68,10 @@ struct Table {
 
 extension String {
     // Split and return an array of strings instead of substrings
-    func splitOn(delimiter: Character) -> [String] {
+    func splitOn(delimiter: String) -> [String] {
         var stringArray = [String]()
-        let substringSplit = self.split(separator: delimiter)
-        
+//        let substringSplit = self.split(separator: delimiter)
+        let substringSplit = self.components(separatedBy: delimiter)
         for substring in substringSplit {
             stringArray.append(String(substring))
         }
