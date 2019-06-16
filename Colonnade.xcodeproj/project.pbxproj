@@ -26,7 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		257D9BCC22B0C654008D420A /* Colonnade */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Colonnade; sourceTree = BUILT_PRODUCTS_DIR; };
+		257D9BCC22B0C654008D420A /* mdtg */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mdtg; sourceTree = BUILT_PRODUCTS_DIR; };
 		257D9BCF22B0C654008D420A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		257D9BD622B58119008D420A /* Colonnade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colonnade.swift; sourceTree = "<group>"; };
 		257D9BD822B5814E008D420A /* ConsoleIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleIO.swift; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 		257D9BCD22B0C654008D420A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				257D9BCC22B0C654008D420A /* Colonnade */,
+				257D9BCC22B0C654008D420A /* mdtg */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,7 +88,7 @@
 			);
 			name = Colonnade;
 			productName = Colonnade;
-			productReference = 257D9BCC22B0C654008D420A /* Colonnade */;
+			productReference = 257D9BCC22B0C654008D420A /* mdtg */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -258,7 +258,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T3Q6UYT2K5;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = mdtg;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -268,7 +268,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T3Q6UYT2K5;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = mdtg;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

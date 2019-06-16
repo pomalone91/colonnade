@@ -26,4 +26,17 @@ struct ConsoleIO {
         }
         return contents
     }
+    
+    static func getArgFlag() -> Character? {
+        if CommandLine.arguments.count > 2 {
+            let argFlag = CommandLine.arguments[2].removeLast()
+//            print(argFlag)
+            return argFlag
+        }
+        return nil
+    }
+}
+
+enum ArgFlag {
+    case d
 }

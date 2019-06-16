@@ -30,7 +30,7 @@ struct Table {
         }
     }
     
-    func mdTable() {
+    func mdTable() -> String{
         // string to build into table
         var tableString = String()
         
@@ -60,6 +60,7 @@ struct Table {
         }
         
 //        print(tableString)
+        return tableString
     }
 }
 

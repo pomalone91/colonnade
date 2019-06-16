@@ -15,5 +15,6 @@ struct Colonnade {
         guard let contents = ConsoleIO.readFile(at: url) else { return }
         let table = Table(string: contents)
         print(table.mdTable())
+        print(ConsoleIO.getArgFlag())
     }
 }
